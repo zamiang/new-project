@@ -11,7 +11,6 @@ gulp.task("publish-html", ['assets'], function(cb) {
       'charset': 'utf-8',
       'Content-Type': 'text/html'
     }};
-
   gulp.src(config.dest + "/**/*.html")
     .pipe(s3(config.aws, options))
     .on('end', cb);

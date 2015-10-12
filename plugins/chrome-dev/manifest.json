@@ -1,13 +1,12 @@
 {
   "manifest_version": 2,
-  "name": "Plink",
+  "name": "Plink-DEV",
   "description": "Plink is an app to help creators organize the things they make. It links emails, documents and websites by time, place and person.",
   "version": "0.0.1",
   "homepage_url": "https://www.plink.nyc",
-  "default_locale": "en",
   "browser_action": {
-    "default_icon": "https://www.plink.nyc/img/plink-favicon.png",
-    "default_popup": "popup.html",
+    "default_icon": "img/plink-favicon.png",
+    "default_popup": "templates/popup.html",
     "default_title": "Plink"
   },
   "permissions": [
@@ -20,7 +19,7 @@
   "content_scripts" : [
     {
       "matches": ["https://mail.google.com/*", "https://inbox.google.com/*"],
-      "js": ["inboxsdk.js", "loader.js"]
+      "js": ["js/inboxsdk.js", "js/chrome.js"]
     }
   ]
 }

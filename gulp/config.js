@@ -7,7 +7,7 @@ module.exports = {
     scripts: ["assets/*.coffee"],
     styles: ["assets/*.styl"],
     images: ["images/*"],
-    templates: ["apps/*/templates/index.jade"]
+    templates: ["apps/*/templates/*.jade"]
   },
   aws: JSON.parse(fs.readFileSync('./aws.json')),
   defaultCacheControl: "max-age=86400, no-transform, public"

@@ -1,1 +1,1 @@
-require("../apps/chrome/javascripts/loader.coffee")
+require("../apps/chrome/javascripts/chrome.coffee")

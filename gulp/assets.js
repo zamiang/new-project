@@ -43,7 +43,7 @@ gulp.task("scripts", function(done) {
   });
 });
 
-gulp.task("vendor-scripts", function(done) {
+gulp.task("vendor-scripts", function() {
   gulp.src(config.paths.vendor)
     .pipe(gulp.dest(config.dest + "/js"));
 });
