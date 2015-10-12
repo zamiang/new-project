@@ -1,0 +1,20 @@
+block locals
+  - assetPackage = 'home'
+
+doctype html
+html
+  head
+    include head
+    block head
+    link( type='text/css', rel='stylesheet', href='/css/app' + CSS_EXT )
+    link( type='text/css', rel='stylesheet', href='/css/' + assetPackage + CSS_EXT )
+  body
+    #main-layout-container
+      block body
+      .main-layout-footer-push
+    #scripts
+      include scripts
+      script( src='/js/' + assetPackage + JS_EXT )
+      block scripts
+    include ../footer/template
+    script( src='/js/app' + JS_EXT )

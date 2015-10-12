@@ -1,0 +1,34 @@
+extends ../../../components/layout/templates/index
+
+block head
+  include ../../../components/layout/templates/common_head
+
+append locals
+  - assetPackage = 'home'
+
+block body
+  #home
+    header
+      .heading.faux-underline-large Plink
+      .sub-heading Plink is an app to help creators organize the things they make. 
+
+    .projects
+      .project-title About Plink
+      .border
+      .project
+        .title.faux-underline-large How does Plink work?
+        .description Plink links emails, documents and websites by time, place and person. It helps people easily gather the materials they need for their day. It is similar to Google now, but with more granular information focused specifically on daily office work.
+
+      .project
+        .title.faux-underline-large What does it do?
+        .description Plink is a Chrome plugin that enhances gmail.com and Google inbox in the Chrome browser
+
+      .project
+        .title.faux-underline-large What led me to this idea?
+        .description Plink is something that I desperately need. I work on way too many projects and have next to no working memory. Without the ability to easily reference the documents I need, my life feels more hectic than it really is.
+
+      .project
+        .title.faux-underline-large What about security?
+        .description Plink stores all of your data where it belongs - on your computer. However, we do log some anonymized events to see if features are being used. In the spirit of transparency, this application is completely open source so you can see exactly what is logged.
+
+    include ../../../components/layout/footer/bio.jade      

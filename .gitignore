@@ -1,0 +1,15 @@
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+.env
+npm-debug.log
+node_modules
+.DS_Store
+dump.rdb
+aws.json
+dist/
+public/

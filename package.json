@@ -1,0 +1,54 @@
+{
+  "name": "Plink",
+  "version": "0.1.0",
+  "description": "Plink is an app to help creators organize the things they make. It links emails, documents and websites by time, place and person.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zamiang/plink.git"
+  },
+  "scripts": {
+    "start": "gulp server",
+    "watch": "gulp watch",
+    "deploy": "gulp deploy"
+  },
+  "readmeFilename": "README.md",
+  "engines": {
+    "node": "0.12"
+  },
+  "devDependencies": {
+    "coffee-script": "*",
+    "backbone": "*",
+    "browserify": "*",
+    "coffeeify": "*",
+    "d3": "*",
+    "del": "*",
+    "event-stream": "*",
+    "glob": "*",
+    "gulp": "*",
+    "gulp-coffee": "*",
+    "gulp-gzip": "*",
+    "gulp-imagemin": "*",
+    "gulp-jade": "*",
+    "gulp-minify-css": "*",
+    "gulp-rename": "*",
+    "gulp-s3": "*",
+    "gulp-filter": "*",
+    "gulp-server-livereload": "*",
+    "gulp-stylus": "*",
+    "hoverintent": "*",
+    "jade": "*",
+    "jadeify": "*",
+    "jquery": "*",
+    "jstransformer-marked": "*",
+    "marked": "*",
+    "moment": "*",
+    "nib": "*",
+    "nice-json2csv": "*",
+    "require-dir": "*",
+    "stylus": "*",
+    "topojson": "*",
+    "underscore": "*",
+    "underscore.string": "*",
+    "vinyl-source-stream": "*"
+  }
+}
