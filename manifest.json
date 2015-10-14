@@ -20,7 +20,7 @@
         "https://mail.google.com/*",
         "https://inbox.google.com/*"
       ],
-      "js": ["js/inboxsdk.js", "js/chrome.js"],
+      "js": ["js/inboxsdk.js"],
       "run_at": "document_end"
     }
   ]

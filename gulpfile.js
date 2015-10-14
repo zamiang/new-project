@@ -16,4 +16,4 @@ gulp.task("assets", ["scripts", "styles", "images", "templates", "vendor-scripts
 gulp.task("deploy", ["publish-html", "publish-scripts", "publish-styles", "publish-images"]);
 
 // Gulp chrome
-gulp.task("chrome", ["clean-chrome", "chrome-templates", "chrome-css", "chrome-js", "chrome-img"]);
+gulp.task("chrome", ["clean-chrome", "chrome-json", "chrome-templates", "chrome-css", "chrome-js", "chrome-img"]);

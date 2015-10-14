@@ -1,6 +1,5 @@
 *.seed
 *.log
-*.csv
 *.dat
 *.out
 *.pid
@@ -9,17 +8,5 @@
 npm-debug.log
 node_modules
 .DS_Store
-dump.rdb
 aws.json
 dist/
-public/
-
-plugins/chrome-dev/img
-plugins/chrome-dev/js
-plugins/chrome-dev/css
-plugins/chrome-dev/templates
-
-plugins/chrome-prod/img
-plugins/chrome-prod/js
-plugins/chrome-prod/css
-plugins/chrome-prod/templates
