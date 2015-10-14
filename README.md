@@ -44,7 +44,7 @@ plugin wheras the production plugin references remote assets.
 The easiest way to develop locally is to Install the
 [Chrome Apps & Extensions Developer Tool](https://chrome.google.com/webstore/detail/chrome-apps-extensions-de/ohmmkhmmmpcnpikjeljgnaoabkaalbgc). It
 will allow you to install dev and production versions of the plugin by
-dropping their folder (`./plugins/chrome-dev`) into the tool.
+dropping their folder (`./dist/plugins/chrome-dev`) into the tool.
 
 ## Deployment
 
