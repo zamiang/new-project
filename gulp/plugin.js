@@ -2,16 +2,23 @@ var gulp = require("gulp");
 var del = require("del");
 
 gulp.task("clean-chrome", function() {
-  // types of dirs we have
-  types =["js", "templates", "css", "img"];
+  del(['./plugins']);
+});
 
-  // concat two arrays to delete the above dirs in both dev and prod
-  dirs = types.map(function(dir) {
-    return "./chrome-dev/" + dir;
-  }).concat(types.map(function(dir) {
-    return "./chrome-prod/" + dir;
-  }));
-  del([dirs]);
+gulp.task("chrome-json", function() {
+  // Dev
+  gulp.src("./manifest.json")
+    .pipe(jeditor({
+      'version': '1.2.3'
+    }))
+    .pipe(gulp.dest("./dest"));
+
+  // Prod
+  gulp.src("./manifest.json")
+    .pipe(jeditor({
+      'version': '1.2.3'
+    }))
+    .pipe(gulp.dest("./dest"));
 });
 
 gulp.task("chrome-templates", function() {

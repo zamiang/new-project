@@ -35,6 +35,7 @@
     "gulp-filter": "*",
     "gulp-server-livereload": "*",
     "gulp-stylus": "*",
+    "gulp-json-editor": "*",
     "hoverintent": "*",
     "jade": "*",
     "jadeify": "*",
