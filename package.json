@@ -20,8 +20,6 @@
     "backbone": "*",
     "browserify": "*",
     "coffeeify": "*",
-    "googleapis": "*",
-    "d3": "*",
     "del": "*",
     "event-stream": "*",
     "glob": "*",

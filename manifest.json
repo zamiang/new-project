@@ -4,17 +4,26 @@
   "description": "Plink is an app to help creators organize the things they make. It links emails, documents and websites by time, place and person.",
   "version": "0.0.1",
   "homepage_url": "https://www.plink.nyc",
+  "icons": {
+    "48": "img/plink-favicon.png"
+  },
   "browser_action": {
     "default_icon": "img/plink-favicon.png",
-    "default_popup": "templates/popup.html",
+    "default_popup": "popup.html",
     "default_title": "Plink"
   },
   "permissions": [
+    "identity",
     "https://mail.google.com/",
     "https://inbox.google.com/",
     "https://www.plink.nyc/",
-    "https://accounts.google.com/o/oauth2/token"
+    "https://www.googleapis.com/auth/gmail.readonly",
+    "https://www.googleapis.com/gmail"
   ],
+  "oauth2": {
+    "client_id":"755195619052-296e629meucrn3h5c9itfhk91fa796b8.apps.googleusercontent.com",
+    "scopes": ["https://mail.google.com/", "https://www.googleapis.com/auth/gmail.readonly"]
+  },
   "content_scripts" : [
     {
       "matches": [
@@ -23,11 +32,6 @@
       ],
       "js": ["js/inboxsdk.js"],
       "run_at": "document_end"
-    },
-    {
-      "matches": ["http://www.google.com/robots.txt*"],
-      "js": ["js/oauth.js"],
-      "run_at": "document_start"
     }
   ]
 }
