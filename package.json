@@ -21,6 +21,7 @@
     "browserify": "*",
     "coffeeify": "*",
     "del": "*",
+    "q": "*",
     "event-stream": "*",
     "glob": "*",
     "gulp": "*",
