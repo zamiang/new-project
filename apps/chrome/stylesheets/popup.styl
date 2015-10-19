@@ -1,9 +1,30 @@
 body
-  font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif
+  font-family: $font-family
+  color: $default-font-color
   font-size: 100%
+  padding: 0px
+  margin: 0px
+  border: 0px solid
+  width: 300px
+  font-size: 14px
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  font-smoothing: antialiased
+  letter-spacing: 0.01rem
+  line-height: 1.6em
 
-#status
-  white-space: pre;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  max-width: 400px;
+  header
+    height: 30px
+    background: cyan
+    color: white
+    text-align: center
+    font-size: 18px
+    font-weight: bold
+    padding-top: 9px
+
+  footer
+    text-align: center
+    color: $light-gray
+    font-size: 12px
+    a
+      color: $light-gray

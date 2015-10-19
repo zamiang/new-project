@@ -2,8 +2,8 @@ var gulp = require("gulp");
 var del = require("del");
 var jeditor = require("gulp-json-editor");
 
-gulp.task("clean-chrome", function() {
-  del(['./dist/plugins']);
+gulp.task("clean-chrome", function(success) {
+  del(['./dist/plugins/chrome-dev', './dist/plugins/chrome-prod'], success);
 });
 
 gulp.task("chrome-json", function() {
@@ -44,7 +44,7 @@ gulp.task("chrome-css", function() {
 });
 
 gulp.task("chrome-js", function() {
-  gulp.src(['./dist/js/inboxsdk.js', './dist/js/loader.js', './dist/js/popup.js', './dist/js/chrome.js'])
+  gulp.src(['./dist/js/inboxsdk.js', './dist/js/loader.js', './dist/js/popup.js', './dist/js/chrome.js', './dist/js/oauth.js'])
     .pipe(gulp.dest('./dist/plugins/chrome-dev/js'))
     .pipe(gulp.dest('./dist/plugins/chrome-prod/js'));
 });

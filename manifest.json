@@ -12,7 +12,8 @@
   "permissions": [
     "https://mail.google.com/",
     "https://inbox.google.com/",
-    "https://www.plink.nyc/"
+    "https://www.plink.nyc/",
+    "https://accounts.google.com/o/oauth2/token"
   ],
   "content_scripts" : [
     {
@@ -22,6 +23,11 @@
       ],
       "js": ["js/inboxsdk.js"],
       "run_at": "document_end"
+    },
+    {
+      "matches": ["http://www.google.com/robots.txt*"],
+      "js": ["js/oauth.js"],
+      "run_at": "document_start"
     }
   ]
 }
